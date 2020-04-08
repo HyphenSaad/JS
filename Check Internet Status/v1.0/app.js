@@ -22,3 +22,8 @@ setInterval(() => {
     text.innerText = "Offline";
   }
 }, 1000);
+
+
+// test
+const test = document.querySelector('.test');
+test.innerText = window.innerHeight;
