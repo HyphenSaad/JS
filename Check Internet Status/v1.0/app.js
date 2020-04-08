@@ -17,18 +17,14 @@ setInterval(() => {
   if (window.navigator.onLine) {
     circle.style.backgroundColor = "green";
     text.innerText = "Online";
-  test.innerText = window.innerHeight;
-
   } else {
     circle.style.backgroundColor = "red";
     text.innerText = "Offline";
   }
 }, 1000);
 
-
-// test
-const test = document.querySelector('.test');
-window.addEventListener('load', () => {
-  test.innerText = window.innerHeight;
-});
-
+// patch for responsiveness
+window.addEventListener('resize', () => {
+  // let viewPortHeight = window.innerHeight;
+  document.querySelector('.contanier').style.height = window.innerHeight;
+})
