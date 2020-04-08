@@ -25,6 +25,5 @@ setInterval(() => {
 
 // patch for responsiveness
 window.addEventListener('resize', () => {
-  // let viewPortHeight = window.innerHeight;
-  document.querySelector('.contanier').style.height = window.innerHeight;
+  document.querySelector('.contanier').style.setProperty('--vh', `${window.innerHeight * 0.1}px`);
 })
