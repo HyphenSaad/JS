@@ -41,3 +41,28 @@
     transform: scale(1);
   }
 }
+
+/* to make it bit responsive */
+@media only screen and (min-width: 768px) {
+  .circle {
+    width: var(--circle-radius);
+    height: var(--circle-radius);
+    margin: var(--circle-margin);
+  }
+  
+  .text {
+    font-size: var(--font-size);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .circle {
+    width: 16px;
+    height: 16px;
+    margin: 10px;
+  }
+  
+  .text {
+    font-size: 24px;
+  }
+}
