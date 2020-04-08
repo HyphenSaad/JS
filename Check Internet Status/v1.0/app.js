@@ -23,7 +23,3 @@ setInterval(() => {
   }
 }, 1000);
 
-// patch for responsiveness
-window.addEventListener('resize', () => {
-  document.querySelector('.contanier').style.setProperty('--vh', `${window.innerHeight * 0.1}px`);
-})
